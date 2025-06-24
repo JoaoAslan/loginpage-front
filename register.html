@@ -1,0 +1,47 @@
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Register</title>
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+    <body>
+        <div id="particles-js"></div>
+        <div class="main-content">
+            <div class="div-content register">
+                <h1 class="title">Register</h1>
+                <form class="form register">
+                    <div class="input-box name missing">
+                        <label class="label-name" for="input-name">Nome</label>
+                        <input id="input-name" type="text" name="name" placeholder="Nome">
+                    </div>
+                    <div class="input-box email">
+                        <label class="label-email" for="input-email">Email</label>
+                        <input id="input-email" type="text" name="email" placeholder="Email">
+                    </div>
+                    <label class="error email">* Já existe uma conta cadastrada com esse e-mail.</label>
+                    <div class="input-box password">
+                        <label class="label-password" for="input-password">Senha</label>
+                        <input id="input-password" type="password" name="password" placeholder="Senha">
+                    </div>
+                    <ul class="password-rules">
+                        <li id="length" class="rule">Mais de seis caracteres.</li>
+                        <li id="digit" class="rule">Um digito númerico. (0, 1, 2, 3, etc)</li>
+                        <li id="special" class="rule">Um caractere especial. (@, #, _, -, etc)</li>
+                    </ul>
+                    <div class="input-box confirm">
+                        <label class="label-confirm" for="input-confirm">Confirme sua senha</label>
+                        <input id="input-confirm" type="password" name="confirm" placeholder="Confirme sua senha">
+                    </div>
+                    <label class="error confirm">* As senhas devem ser iguais.</label>
+                    <button class="btn-submit register" type="button" disabled>Cadastrar</button>
+                </form>
+                <label>Já tem uma conta?</label> main
+                <a href="login.html">Conecte-se</a> 
+            </div>
+        </div>
+        <script type="module" src="./scripts/particles/load-config.js"></script>
+        <script type="module" src="./scripts/pages/register.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    </body>
+</html>
