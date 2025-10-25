@@ -8,23 +8,21 @@
     <body>
         <div id="particles-js"></div>
         <div class="main-content">
-            <div class="div-content login">
-                <h1 class="title">Log in</h1>
-                <form class="form login" action="main.js" method="post">
-                    <div class="input-box email">
-                        <label class="label-email" for="input-email">Email</label>
-                        <input id="input-email" type="text" name="email" placeholder="Email">
-                    </div>
-                    <div class="input-box password">
-                        <label class="label-password" for="input-password">Senha</label>
-                        <input class="" id="input-password" type="password" name="password" placeholder="Senha">
-                    </div>
-                    <label class="error login">* Usuário e/ou senha incorretos.</label>
-                    <button class="btn-submit login" type="button" disabled>Acessar</button>
-                </form>
-                <label>Não possui usuário? <a href="register.html">Registre-se</a> agora!</label>  
-                <a class="forgot-password" href="#">Esqueceu sua senha?</a>
-            </div>
+            <h1 class="title">Log in</h1>
+            <form class="form login" action="main.js" method="post">
+                <div class="input-box email">
+                    <label class="label-email" for="input-email">Email</label>
+                    <input id="input-email" type="text" name="email" placeholder="Email">
+                </div>
+                <div class="input-box password">
+                    <label class="label-password" for="input-password">Senha</label>
+                    <input class="" id="input-password" type="password" name="password" placeholder="Senha">
+                </div>
+                <p class="error login">* Usuário e/ou senha incorretos.</p>
+                <button class="btn-submit login" type="button" disabled>Acessar</button>
+            </form>
+            <p>Não possui usuário? <a href="register.html">Registre-se</a> agora!</p>  
+            <a class="forgot-password" href="#">Esqueceu sua senha?</a>
         </div>
         <script type="module" src="./scripts/pages/login.js"></script>
         <script type="module" src="./scripts/particles/load-config.js"></script>

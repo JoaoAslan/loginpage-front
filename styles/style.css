@@ -1,7 +1,11 @@
-body, html {
+* {
     padding: 0;
     margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
 
+body, html {
     text-decoration: none;
     font-size: 16px;
     font-family: Arial, monospace;
@@ -45,37 +49,14 @@ body {
 
 @media (max-width: 768px) {
     .main-content {
-        width: 100%;
-        height: 100%;
+        width: 100vw;
+        height: 100vh;
         border-radius: 0px;
     }
 
-    .main-content .div-content {
-        padding: 50px;
+    .main-content .form {
+        padding: 20px 50px;
     }
-}
-
-.div-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    padding: 20px;
-    margin: 10px 0px;
-    box-sizing: border-box;
-
-    width: 100%;
-    height: 100%;
-}
-
-.div-content a {
-    text-decoration: none;
-}
-
-.div-content > .title {
-    margin: 0px;
-    margin-bottom: 25px;
 }
 
 .form {
@@ -83,6 +64,7 @@ body {
     flex-direction: column;
     gap: 12px;
     width: 100%;
+    padding: 30px;
 }
 
 .input-box {
@@ -124,16 +106,12 @@ body {
 
 .input-box:focus-within > label {
     display: block;
+    position: absolute;
     color: #505050;
 }
 
 .input-box:focus-within > input {
-    height: 70%;
-    box-sizing: border-box;
-}
-
-.input-box > input {
-    height: 100%;
+    padding-top: 10px;
 }
 
 .input-box > input.focus::placeholder {
@@ -147,7 +125,7 @@ body {
     margin-left: 1.8em;
     padding: 0px;
     /* 
-    list-style-position: inside possui 2 problemas:
+    list-style-position: inside; possui 2 problemas:
         1. Nao e mais possivel alterar o gap entre o ::marker e o texto da <li>;
         2. No Chromium possui um bug que altera o gap entre o ::marker e o texto da <li> trazendo inconsistencia entre os navegadores
     */

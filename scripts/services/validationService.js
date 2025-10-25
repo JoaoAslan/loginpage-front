@@ -1,5 +1,6 @@
 import { serverData } from "../../mock/data.js";
 
+// Teste de importação via servidor
 function delay(ms) {
     return new Promise(resolve => setTimeout(() => {
         console.log(`Delay de ${ms}ms`)
@@ -15,7 +16,7 @@ export async function serverInformation(data) {
     const response = serverData;
     return response;
 }
-
+// Fim de teste
 
 export function getInputsData(inputs) {
     const inputData = inputs.reduce((acc, input) => {
